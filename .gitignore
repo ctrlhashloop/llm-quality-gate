@@ -1,0 +1,8 @@
+.llm_venv/
+.env
+reports/
+__pycache__/
+.pytest_cache/
+node_modules/
+.gitignore
+.idea/

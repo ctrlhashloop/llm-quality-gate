@@ -1,0 +1,5 @@
+anthropic
+pytest
+pyyaml
+google-genai
+protobuf
