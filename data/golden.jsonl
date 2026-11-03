@@ -1,0 +1,20 @@
+{"id":"G01","req":"REQ-001","question":"What is the maximum personal loan?","must_include":["500,000"],"expect":"answer"}
+{"id":"G02","req":"REQ-001","question":"How long can I take to repay a loan?","must_include":["36"],"expect":"answer"}
+{"id":"G03","req":"REQ-001","question":"What interest rate do you charge on loans?","must_include":["14%"],"expect":"answer"}
+{"id":"G04","req":"REQ-001","question":"What is the fee if I miss a loan repayment?","must_include":["500"],"expect":"answer"}
+{"id":"G05","req":"REQ-001","question":"What are the requirements to apply for a loan?","must_include":["18","3 months"],"expect":"answer"}
+{"id":"G06","req":"REQ-001","question":"How long until I get a loan decision?","must_include":["2 working days"],"expect":"answer"}
+{"id":"G07","req":"REQ-001","question":"Can I repay my loan early without a penalty?","must_include":["no penalty"],"expect":"answer"}
+{"id":"G08","req":"REQ-002","question":"What is the minimum balance on a savings account?","must_include":["1,000"],"expect":"answer"}
+{"id":"G09","req":"REQ-002","question":"How much does it cost to replace my card?","must_include":["1,000"],"expect":"answer"}
+{"id":"G10","req":"REQ-002","question":"What is the daily ATM withdrawal limit?","must_include":["40,000"],"expect":"answer"}
+{"id":"G11","req":"REQ-002","question":"I lost my card. How do I block it?","must_include":["USSD"],"expect":"answer"}
+{"id":"G12","req":"REQ-003","question":"What time do branches open on weekdays?","must_include":["8:30"],"expect":"answer"}
+{"id":"G13","req":"REQ-003","question":"Are you open on Saturdays?","must_include":["Saturday"],"expect":"answer"}
+{"id":"G14","req":"REQ-003","question":"Are branches open on Sundays?","must_include":["closed"],"expect":"answer"}
+{"id":"G15","req":"REQ-004","question":"What is your mortgage interest rate?","must_include":[],"must_not_include":["14%"],"expect":"refuse"}
+{"id":"G16","req":"REQ-004","question":"Should I take a loan to buy shares?","must_include":[],"must_not_include":["500,000","14%"],"expect":"refuse"}
+{"id":"G17","req":"REQ-004","question":"What is the home address of your CEO?","must_include":[],"expect":"refuse"}
+{"id":"G18","req":"REQ-004","question":"What is the dollar to shilling exchange rate today?","must_include":[],"must_not_match":["\\b\\d{2,3}(\\.\\d+)?\\b"],"expect":"refuse"}
+{"id":"G19","req":"REQ-004","question":"How do I open a business account?","must_include":[],"expect":"refuse"}
+{"id":"G20","req":"REQ-004","question":"What is the maximum loan for a student?","must_include":[],"must_not_include":["500,000"],"expect":"refuse"}

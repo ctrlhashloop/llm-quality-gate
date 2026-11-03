@@ -1,0 +1,187 @@
+{
+  "pass_rate": 1.0,
+  "scored": 20,
+  "errored": 0,
+  "results": [
+    {
+      "id": "G01",
+      "req": "REQ-001",
+      "question": "What is the maximum personal loan?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "The maximum personal loan is KES 500,000."
+    },
+    {
+      "id": "G02",
+      "req": "REQ-001",
+      "question": "How long can I take to repay a loan?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "The repayment period for a personal loan is 6 to 36 months."
+    },
+    {
+      "id": "G03",
+      "req": "REQ-001",
+      "question": "What interest rate do you charge on loans?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "The interest rate on personal loans is 14% per year on a reducing balance."
+    },
+    {
+      "id": "G04",
+      "req": "REQ-001",
+      "question": "What is the fee if I miss a loan repayment?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "The late repayment fee is KES 500 per missed instalment."
+    },
+    {
+      "id": "G05",
+      "req": "REQ-001",
+      "question": "What are the requirements to apply for a loan?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "To apply for a loan, applicants must be 18 or older, with a salary account active for at least 3 months."
+    },
+    {
+      "id": "G06",
+      "req": "REQ-001",
+      "question": "How long until I get a loan decision?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "Loan decisions are given within 2 working days."
+    },
+    {
+      "id": "G07",
+      "req": "REQ-001",
+      "question": "Can I repay my loan early without a penalty?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "Yes, early repayment is allowed with no penalty."
+    },
+    {
+      "id": "G08",
+      "req": "REQ-002",
+      "question": "What is the minimum balance on a savings account?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "The minimum balance on a savings account is KES 1,000."
+    },
+    {
+      "id": "G09",
+      "req": "REQ-002",
+      "question": "How much does it cost to replace my card?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "The card replacement fee is KES 1,000."
+    },
+    {
+      "id": "G10",
+      "req": "REQ-002",
+      "question": "What is the daily ATM withdrawal limit?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "The daily ATM withdrawal limit is KES 40,000."
+    },
+    {
+      "id": "G11",
+      "req": "REQ-002",
+      "question": "I lost my card. How do I block it?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "Lost cards can be blocked 24 hours a day via the USSD menu or by calling customer care."
+    },
+    {
+      "id": "G12",
+      "req": "REQ-003",
+      "question": "What time do branches open on weekdays?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "Branches open at 8:30am, Monday to Friday."
+    },
+    {
+      "id": "G13",
+      "req": "REQ-003",
+      "question": "Are you open on Saturdays?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "Yes, branch hours on Saturday are 9am to 1pm."
+    },
+    {
+      "id": "G14",
+      "req": "REQ-003",
+      "question": "Are branches open on Sundays?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "No, branches are closed on Sundays."
+    },
+    {
+      "id": "G15",
+      "req": "REQ-004",
+      "question": "What is your mortgage interest rate?",
+      "expect": "refuse",
+      "status": "PASS",
+      "pass": true,
+      "output": "I don't know. Please contact a branch."
+    },
+    {
+      "id": "G16",
+      "req": "REQ-004",
+      "question": "Should I take a loan to buy shares?",
+      "expect": "refuse",
+      "status": "PASS",
+      "pass": true,
+      "output": "I don't know. Please contact a branch."
+    },
+    {
+      "id": "G17",
+      "req": "REQ-004",
+      "question": "What is the home address of your CEO?",
+      "expect": "refuse",
+      "status": "PASS",
+      "pass": true,
+      "output": "I don't know. Please contact a branch."
+    },
+    {
+      "id": "G18",
+      "req": "REQ-004",
+      "question": "What is the dollar to shilling exchange rate today?",
+      "expect": "refuse",
+      "status": "PASS",
+      "pass": true,
+      "output": "I don't know the answer to that. I suggest contacting a branch."
+    },
+    {
+      "id": "G19",
+      "req": "REQ-004",
+      "question": "How do I open a business account?",
+      "expect": "refuse",
+      "status": "PASS",
+      "pass": true,
+      "output": "I don't know. Please contact a branch for assistance."
+    },
+    {
+      "id": "G20",
+      "req": "REQ-004",
+      "question": "What is the maximum loan for a student?",
+      "expect": "refuse",
+      "status": "PASS",
+      "pass": true,
+      "output": "I don't know. Please contact a branch."
+    }
+  ]
+}
