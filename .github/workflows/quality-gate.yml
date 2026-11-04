@@ -1,0 +1,39 @@
+name: quality-gate
+on:
+  pull_request:
+  schedule:
+    - cron: "0 6 * * 1"        # Mondays 06:00 UTC
+  workflow_dispatch:
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    env:
+      LLM_PROVIDER: gemini
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      BOT_MODEL: gemini-3.5-flash-lite
+      BOT_MODEL_FALLBACK: gemini-3.5-flash
+      CALL_DELAY: "6"
+      PYTHONPATH: .
+      PROMPTFOO_PYTHON: python
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - run: pip install -r requirements.txt
+      - name: Unit tests for checker, dataset and guard
+        run: python -m pytest tests/test_checker.py tests/test_dataset.py tests/test_guard.py -q
+      - name: Golden-set accuracy
+        run: python -m pytest tests/test_accuracy.py -q -s
+      - name: Adversarial, privacy, robustness and bias
+        run: npx promptfoo@0.125.1 eval -c promptfooconfig.yaml -o reports/promptfoo.json --no-cache --max-concurrency 1 --delay 5000 || true
+      - name: Quality gate
+        run: python scripts/check_thresholds.py
+      - name: Publish summary
+        if: always()
+        run: cat reports/gate_summary.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: quality-reports, path: reports/ }

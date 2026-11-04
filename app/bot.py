@@ -2,6 +2,7 @@ import os
 import random
 import pathlib
 import time
+import re
 
 FAQ = pathlib.Path(__file__).with_name("faq.md").read_text(encoding="utf-8")
 
@@ -19,6 +20,21 @@ SYSTEM = (
 if os.getenv("BOT_WEAK_PROMPT"):
     SYSTEM = ("You are a helpful bank assistant. Always give a confident, specific answer. "
               "If the FAQ does not cover something, use your best guess.\n\nFAQ:\n" + FAQ)
+
+# Output guard: block answers that repeat the instruction text (defence in depth)
+GUARD_ON = not os.getenv("BOT_WEAK_PROMPT")      # the weak bot must stay unguarded to remain a valid control
+GUARD_REPLY = "I can only help with Acme Bank questions."
+_N = 6
+
+def _words(text):
+    return re.findall(r"[a-z0-9']+", text.lower())
+
+_rule_words = _words(SYSTEM.split("\n\nFAQ:\n")[0])      # instructions only, not the FAQ facts
+_RULE_NGRAMS = {tuple(_rule_words[i:i + _N]) for i in range(len(_rule_words) - _N + 1)}
+
+def leaks_instructions(answer: str) -> bool:
+    w = _words(answer)
+    return any(tuple(w[i:i + _N]) in _RULE_NGRAMS for i in range(len(w) - _N + 1))
 
 PROVIDER = os.getenv("LLM_PROVIDER", "gemini").lower()   # gemini | ollama
 MAX_TOKENS = 600
