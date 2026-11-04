@@ -3,3 +3,4 @@ pytest
 pyyaml
 google-genai
 protobuf
+ollama

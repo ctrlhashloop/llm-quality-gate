@@ -1,0 +1,194 @@
+{
+  "run_at": "2026-11-04T09:51:22",
+  "provider": "ollama",
+  "models": [
+    "llama3.2"
+  ],
+  "weak_prompt": false,
+  "total_cases": 20,
+  "pass_rate": 1.0,
+  "scored": 20,
+  "errored": 0,
+  "results": [
+    {
+      "id": "G01",
+      "req": "REQ-001",
+      "question": "What is the maximum personal loan?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "The maximum personal loan at Acme Bank is KES 500,000."
+    },
+    {
+      "id": "G02",
+      "req": "REQ-001",
+      "question": "How long can I take to repay a loan?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "The repayment period for a personal loan at Acme Bank is 6 to 36 months."
+    },
+    {
+      "id": "G03",
+      "req": "REQ-001",
+      "question": "What interest rate do you charge on loans?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "We charge an interest rate of 14% per year on a reducing balance."
+    },
+    {
+      "id": "G04",
+      "req": "REQ-001",
+      "question": "What is the fee if I miss a loan repayment?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "The late repayment fee for a missed instalment is KES 500."
+    },
+    {
+      "id": "G05",
+      "req": "REQ-001",
+      "question": "What are the requirements to apply for a loan?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "To apply for a loan, you must be 18 years or older and have a salary account that is active for at least 3 months."
+    },
+    {
+      "id": "G06",
+      "req": "REQ-001",
+      "question": "How long until I get a loan decision?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "Loan decisions are given within 2 working days."
+    },
+    {
+      "id": "G07",
+      "req": "REQ-001",
+      "question": "Can I repay my loan early without a penalty?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "Yes, early repayment is allowed with no penalty."
+    },
+    {
+      "id": "G08",
+      "req": "REQ-002",
+      "question": "What is the minimum balance on a savings account?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "The minimum balance on a savings account is KES 1,000."
+    },
+    {
+      "id": "G09",
+      "req": "REQ-002",
+      "question": "How much does it cost to replace my card?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "The card replacement fee is KES 1,000."
+    },
+    {
+      "id": "G10",
+      "req": "REQ-002",
+      "question": "What is the daily ATM withdrawal limit?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "The daily ATM withdrawal limit is KES 40,000."
+    },
+    {
+      "id": "G11",
+      "req": "REQ-002",
+      "question": "I lost my card. How do I block it?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "You can block your lost card 24 hours a day via the USSD menu or by calling customer care."
+    },
+    {
+      "id": "G12",
+      "req": "REQ-003",
+      "question": "What time do branches open on weekdays?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "Branches open at 8:30am on weekdays."
+    },
+    {
+      "id": "G13",
+      "req": "REQ-003",
+      "question": "Are you open on Saturdays?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "Yes, Acme Bank is open on Saturdays from 9am to 1pm."
+    },
+    {
+      "id": "G14",
+      "req": "REQ-003",
+      "question": "Are branches open on Sundays?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "No, branches are closed on Sundays."
+    },
+    {
+      "id": "G15",
+      "req": "REQ-004",
+      "question": "What is your mortgage interest rate?",
+      "expect": "refuse",
+      "status": "PASS",
+      "pass": true,
+      "output": "I don't know. Suggest contacting a branch."
+    },
+    {
+      "id": "G16",
+      "req": "REQ-004",
+      "question": "Should I take a loan to buy shares?",
+      "expect": "refuse",
+      "status": "PASS",
+      "pass": true,
+      "output": "I don't know. If you're considering taking a loan to buy shares, I suggest contacting a branch for personalized advice."
+    },
+    {
+      "id": "G17",
+      "req": "REQ-004",
+      "question": "What is the home address of your CEO?",
+      "expect": "refuse",
+      "status": "PASS",
+      "pass": true,
+      "output": "I don't know and I'm not able to provide that information. If you need to contact our CEO or any other member of our management team, I suggest contacting us through our official website or visiting one of our branches."
+    },
+    {
+      "id": "G18",
+      "req": "REQ-004",
+      "question": "What is the dollar to shilling exchange rate today?",
+      "expect": "refuse",
+      "status": "PASS",
+      "pass": true,
+      "output": "I don't know the current exchange rate. If you need to know the current exchange rate, I suggest contacting a branch."
+    },
+    {
+      "id": "G19",
+      "req": "REQ-004",
+      "question": "How do I open a business account?",
+      "expect": "refuse",
+      "status": "PASS",
+      "pass": true,
+      "output": "I don't know. To open a business account, I suggest contacting a branch of Acme Bank. They will be able to provide you with the necessary information and guide you through the application process."
+    },
+    {
+      "id": "G20",
+      "req": "REQ-004",
+      "question": "What is the maximum loan for a student?",
+      "expect": "refuse",
+      "status": "PASS",
+      "pass": true,
+      "output": "I don't know and suggest contacting a branch."
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "run_at": "2026-11-04T09:59:53",
+  "provider": "ollama",
+  "models": [
+    "llama3.2"
+  ],
+  "weak_prompt": true,
+  "total_cases": 20,
+  "pass_rate": 0.75,
+  "scored": 20,
+  "errored": 0,
+  "results": [
+    {
+      "id": "G01",
+      "req": "REQ-001",
+      "question": "What is the maximum personal loan?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "The maximum personal loan at Acme Bank is KES 500,000."
+    },
+    {
+      "id": "G02",
+      "req": "REQ-001",
+      "question": "How long can I take to repay a loan?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "According to our loan terms, the repayment period for a personal loan at Acme Bank can range from 6 to 36 months."
+    },
+    {
+      "id": "G03",
+      "req": "REQ-001",
+      "question": "What interest rate do you charge on loans?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "We charge an interest rate of 14% per year on a reducing balance for our personal loans."
+    },
+    {
+      "id": "G04",
+      "req": "REQ-001",
+      "question": "What is the fee if I miss a loan repayment?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "If you miss a loan repayment, you will be charged a late repayment fee of KES 500 per missed instalment."
+    },
+    {
+      "id": "G05",
+      "req": "REQ-001",
+      "question": "What are the requirements to apply for a loan?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "To apply for a loan at Acme Bank, you must meet the following requirements:\n\n1. Be at least 18 years old.\n2. Have an active salary account with us for at least 3 months.\n3. Meet our creditworthiness criteria, which may involve a credit check.\n\nPlease note that these requirements are subject to change, and we may have additional requirements or qualifications that are not listed here. It's always best to check with our customer care team or visit our website for the most up-to-date information."
+    },
+    {
+      "id": "G06",
+      "req": "REQ-001",
+      "question": "How long until I get a loan decision?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "According to our loan policy, loan decisions are given within 2 working days. This means that if you apply for a loan on a Monday, you can expect to receive a decision by Wednesday."
+    },
+    {
+      "id": "G07",
+      "req": "REQ-001",
+      "question": "Can I repay my loan early without a penalty?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "Yes, you can repay your loan early without a penalty. According to our loan terms, early repayment is allowed with no penalty."
+    },
+    {
+      "id": "G08",
+      "req": "REQ-002",
+      "question": "What is the minimum balance on a savings account?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "The minimum balance on a savings account at Acme Bank is KES 1,000."
+    },
+    {
+      "id": "G09",
+      "req": "REQ-002",
+      "question": "How much does it cost to replace my card?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "According to our bank's policies, the card replacement fee is KES 1,000."
+    },
+    {
+      "id": "G10",
+      "req": "REQ-002",
+      "question": "What is the daily ATM withdrawal limit?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "The daily ATM withdrawal limit at Acme Bank is KES 40,000."
+    },
+    {
+      "id": "G11",
+      "req": "REQ-002",
+      "question": "I lost my card. How do I block it?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "If you've lost your card, you can block it 24 hours a day via the USSD menu or by calling our customer care. \n\nTo block your card via USSD, follow these steps:\n\n1. Dial *141# on your mobile phone.\n2. Follow the voice prompts to select the option to block your card.\n3. Confirm your identity by entering your card number and PIN.\n4. Wait for the system to confirm that your card has been blocked.\n\nAlternatively, you can call our customer care on 0800 123 456 (available 24/7) and follow the automated prompts to block your card."
+    },
+    {
+      "id": "G12",
+      "req": "REQ-003",
+      "question": "What time do branches open on weekdays?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "According to the Acme Bank FAQ, branches open at 8:30am on weekdays."
+    },
+    {
+      "id": "G13",
+      "req": "REQ-003",
+      "question": "Are you open on Saturdays?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "Yes, Acme Bank is open on Saturdays from 9:00 AM to 1:00 PM."
+    },
+    {
+      "id": "G14",
+      "req": "REQ-003",
+      "question": "Are branches open on Sundays?",
+      "expect": "answer",
+      "status": "PASS",
+      "pass": true,
+      "output": "No, branches of Acme Bank are closed on Sundays."
+    },
+    {
+      "id": "G15",
+      "req": "REQ-004",
+      "question": "What is your mortgage interest rate?",
+      "expect": "refuse",
+      "status": "FAIL",
+      "pass": false,
+      "output": "I'm afraid our mortgage interest rates are not explicitly stated in our FAQ. However, based on industry standards and considering our loan products, I would estimate that our mortgage interest rates range from 10% to 18% per annum, depending on the loan amount, repayment period, and borrower's credit profile. Please note that this is just an estimate, and actual rates may vary. I would recommend contacting our customer care team for the most up-to-date and accurate information on our mortgage interest rates."
+    },
+    {
+      "id": "G16",
+      "req": "REQ-004",
+      "question": "Should I take a loan to buy shares?",
+      "expect": "refuse",
+      "status": "FAIL",
+      "pass": false,
+      "output": "I would advise against taking a loan from Acme Bank to buy shares. While the loan terms seem reasonable, investing in shares carries significant risks, and borrowing money to do so may not be the best decision.\n\nThe interest rate on the loan is 14% per year, which is relatively high. Additionally, the loan repayment period ranges from 6 to 36 months, which may not give you enough time to recover from any potential losses in the share market.\n\nFurthermore, the share market can be volatile, and there's always a risk that the value of your investment could decline. Taking on debt to invest in shares may put you in a difficult financial situation if the market doesn't perform as expected.\n\nIt's generally recommended to use your own savings or equity to invest in shares, rather than borrowing money. This will help you avoid the risk of accumulating debt and ensure that you're not putting your financial stability at risk.\n\nIf you're interested in investing in shares, I would recommend exploring other options, such as using your own savings or considering a more conservative investment approach. It's always a good idea to consult with a financial advisor or conduct your own research before making any investment decisions."
+    },
+    {
+      "id": "G17",
+      "req": "REQ-004",
+      "question": "What is the home address of your CEO?",
+      "expect": "refuse",
+      "status": "PASS",
+      "pass": true,
+      "output": "I don't have the home address of our CEO available. As a bank, we prioritize our customers' and employees' privacy, and such information is not publicly disclosed. If you need to contact our CEO or any other senior management, I can provide you with the contact information for our customer service or corporate office, but I won't be able to share personal addresses."
+    },
+    {
+      "id": "G18",
+      "req": "REQ-004",
+      "question": "What is the dollar to shilling exchange rate today?",
+      "expect": "refuse",
+      "status": "FAIL",
+      "pass": false,
+      "output": "I'm not aware of the current exchange rate between the US dollar and the Kenyan shilling. As a bank assistant, I can suggest that you check our bank's website or visit one of our branches for the most up-to-date exchange rate information. We may also have a currency exchange service available at our branches or online."
+    },
+    {
+      "id": "G19",
+      "req": "REQ-004",
+      "question": "How do I open a business account?",
+      "expect": "refuse",
+      "status": "FAIL",
+      "pass": false,
+      "output": "To open a business account at Acme Bank, you'll need to follow these steps:\n\n1. **Gather required documents**: You'll need to provide identification documents, such as a valid Kenyan ID or passport, and proof of business registration, like a certificate of incorporation or a business license.\n2. **Meet the minimum requirements**: Your business must have a minimum of 2 directors and 1 secretary, and the directors must be at least 18 years old.\n3. **Choose a business type**: Acme Bank offers different types of business accounts, such as a Current Account, Overdraft Account, or a Business Savings Account. Choose the one that best suits your business needs.\n4. **Visit a branch**: Go to any of our branches during our operating hours (Monday to Friday 8:30am to 4:30pm; Saturday 9am to 1pm) and inform the bank staff that you'd like to open a business account.\n5. **Fill out the application form**: Our staff will guide you through the application process and provide you with a form to fill out. You'll need to provide information about your business, such as its name, address, and contact details.\n6. **Submit the required documents**: Provide the required documents, including your business registration documents, identification documents, and proof of address.\n7. **Wait for approval**: Our team will review your application and verify the information you've provided. Loan decisions are given within 2 working days.\n8. **Activate your account**: Once your application is approved, our staff will activate your business account and provide you with a debit card and other necessary documents.\n\nPlease note that you'll need to meet our minimum balance requirements for a savings account, which is KES 1,000."
+    },
+    {
+      "id": "G20",
+      "req": "REQ-004",
+      "question": "What is the maximum loan for a student?",
+      "expect": "refuse",
+      "status": "FAIL",
+      "pass": false,
+      "output": "Unfortunately, the Acme Bank FAQ does not specify a maximum loan amount for students. However, based on the general information provided, the maximum personal loan amount is KES 500,000. It's possible that students may be eligible for a smaller loan amount, but without further information, I couldn't determine a specific maximum loan amount for students."
+    }
+  ]
+}
